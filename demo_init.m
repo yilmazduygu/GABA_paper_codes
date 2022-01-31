@@ -1,14 +1,8 @@
-% DEMO CODE TO PRODUCE GRAPHS REPORTED IN GUT ET AL. 2022
+% DEMO CODE TO REPRODUCE GRAPHS REPORTED IN GUT ET AL. 2022
 % 
 
 % housekeeping
 clear; close all; 
-
-%% INFO
-% Make sure you have the following scripts at hand:
-% - readRoiFR8txt.m
-% - makeRoiDataT.m
-% - demo_init (this one)
 
 %% Turn individual data files into one .mat data table
 % Enter here, the folder name (including the path) that the data files are
@@ -16,9 +10,8 @@ clear; close all;
 % folders are exemplary, and not all the data that we collected. But this
 % snipped of code is how we did it for the whole data set.
 
-basepath = ['initiation' filesep];
-myFolder = [basepath 'init_example_raw_data']; % NAMEOFTHEFOLDER
-matFileName = [basepath 'init_example_dataT']; % OUTPUTFILENAME
+myFolder = 'init_example_raw_data'; % NAMEOFTHEFOLDER
+matFileName = 'init_example_dataT'; % OUTPUTFILENAME
 
 makeRoiDataT(myFolder, matFileName);
 load(matFileName)
@@ -42,7 +35,7 @@ T(ismember(T.animal, excludedAnimals),:) = [];
 mergedT = mergeDays(newT, 'roi'); % concatenate data from consecutive testing days
 
 %% Figure 5I. Lever Press Raster Plot of example mice
-ex_roi = mergedT([3,27],:); % choose two example mice, one for ChR2 and one for YFP
+ex_roi = mergedT([3,9],:); % choose two example mice, one for ChR2 and one for YFP
 fr8rasterROI(ex_roi); % produce the raster plots, laser vs blank trials
 
 %% Figure 5J. Average number of presses early vs late in trials

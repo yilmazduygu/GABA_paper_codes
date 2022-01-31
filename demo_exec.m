@@ -1,14 +1,8 @@
-% DEMO CODE TO PRODUCE GRAPHS REPORTED IN GUT ET AL. 2022
+% DEMO CODE TO REPRODUCE GRAPHS REPORTED IN GUT ET AL. 2022
 % 
 
 % housekeeping
 clear; close all; 
-
-%% INFO
-% Make sure you have the following scripts at hand:
-% - readNewFR8txt.m
-% - makeNewDataT.m
-% - demo_exec (this one)
 
 %% Turn individual data files into one .mat data table
 % Enter here, the folder name (including the path) that the data files are
@@ -16,9 +10,8 @@ clear; close all;
 % folders are exemplary, and not all the data that we collected. But this
 % snipped of code is how we did it for the whole data set.
 
-basepath = ['NC_code_raw' filesep 'execution' filesep];
-myFolder = [basepath 'exec_example_raw_data']; % NAMEOFTHEFOLDER
-matFileName = [basepath 'exec_example_dataT']; % OUTPUTFILENAME
+myFolder = 'exec_example_raw_data'; % NAMEOFTHEFOLDER
+matFileName = 'exec_example_dataT'; % OUTPUTFILENAME
 
 makeNewDataT(myFolder, matFileName);
 load(matFileName)
