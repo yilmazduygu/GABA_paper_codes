@@ -1,6 +1,6 @@
-# GABA_paper_codes
+# Gut et al. 2022
 
-## Scripts necessary to recreate results reported in Gut et al. 2022
+## Info about the scripts necessary to recreate results reported in the paper
 
 All the codes in this folder are compatible with Matlab R2017a and onwards. They were written on R2017a, and tested again on R2021a.
 Everything should run the same way in both Windows and Mac, as these scripts were written using both of these OSs. They also don't depend on any specific toolbox, or hardware. Just download the contents of this repository, and make it the current directory for Matlab. 
