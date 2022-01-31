@@ -1,12 +1,12 @@
-File: C:\MED-PC\Data\2019-09-19_15h18m_Subject 19014.txt
+File: C:\MED-PC\Data\2019-09-19_15h18m_Subject 19007.txt
 
 
 
 Start Date: 09/19/19
 End Date: 09/19/19
-Subject: 19014
+Subject: 19007
 Experiment: fr8
-Group: ROI 5-I
+Group: 1
 Box: 1
 Start Time: 15:18:02
 End Time: 16:18:07
