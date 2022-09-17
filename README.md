@@ -8,7 +8,7 @@ Everything should run the same way in both Windows and Mac, as these scripts wer
 ## Demo scripts
 
 There are two demo scripts in this folder: <demo_init.m> and <demo_exec.m> 
-These are for reproducing the results for the action initiation and action execution paradigms we report in the paper, respectively. The steps to get the results are the same, but the data used in these steps and the initial retrieval of the data differ slightly from each other in these paradigm, hence the separate demo scripts. 
+These are for reproducing the results for the action initiation and action execution paradigms we report in the paper, respectively. The steps to get the results are the same, but the data used in these steps and the initial retrieval of the data differ slightly from each other in these paradigm, hence the separate demo scripts. See the paper for more information: https://www.biorxiv.org/content/10.1101/2022.01.18.476772v1.full 
 
 In order to get a feel for how we imported the raw data and process it, please run the first section of the demo scripts, titled "Turn individual data files into one .mat data table". This section will use the example raw data files that are in their respective subfolders ("init_example_raw_data", "exec_example_raw_data").
 
